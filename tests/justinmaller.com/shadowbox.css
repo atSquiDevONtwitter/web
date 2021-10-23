@@ -1,0 +1,179 @@
+#sb-container,#sb-wrapper{
+text-align:left; 
+}
+#sb-container,#sb-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+margin:0;
+padding:0;
+}
+#sb-container{
+height:100%;
+display:none;
+visibility:hidden;
+z-index:999;
+}
+body > #sb-container{
+position:fixed;
+}
+#sb-overlay{
+height:expression(document.documentElement.clientHeight + 'px');
+}
+#sb-container > #sb-overlay{
+height:100%;
+}
+#sb-wrapper{
+position:relative;
+}
+#sb-wrapper img{
+border:none;
+}
+#sb-body{
+position:relative;
+margin:0;
+padding:0;
+z-index: 1000;
+overflow:hidden;
+border:1px solid #333;
+}
+#sb-body-inner{
+position:relative;
+height:100%;
+}
+#sb-content.html{
+height:100%;
+overflow:auto; 
+}
+#sb-loading{
+position:absolute;
+top:0;
+width:100%;
+height:100%;
+text-align:center;
+padding-top:10px;
+background: url('images/loading.gif') 50% 50% no-repeat;
+}
+#sb-body,#sb-loading{
+background-color:#000000; 
+}
+#sb-title, #sb-info{
+position:relative;
+padding:0;
+overflow:hidden;
+}
+#sb-title-inner, #sb-caption-inner,#sb-info-inner{
+position:relative;
+line-height:16px;
+}
+#sb-title,#sb-title-inner{
+height:26px;
+}
+#sb-title-inner{
+/*font-size:11px;*/
+padding:5px 0;
+color:#fff;
+}
+#sb-info,#sb-info-inner{
+height:20px;
+}
+#sb-info-inner{
+/*font-size:11px;*/
+color:#eee;
+}
+#sb-nav{
+float:right;
+height:16px;
+padding:2px 0;
+width:45%;
+}
+#sb-nav a{
+display:block;
+float:right;
+height:16px;
+width:16px;
+margin-left:3px;
+cursor:pointer;
+}
+#sb-nav-close{
+background-image:url(js/shadowbox/resources/close.png);
+background-repeat:no-repeat;
+}
+#sb-nav-next{
+background-image:url(js/shadowbox/resources/next.png);
+background-repeat:no-repeat;
+}
+#sb-nav-previous{
+background-image:url(js/shadowbox/resources/previous.png);
+background-repeat:no-repeat;
+}
+#sb-nav-play{
+background-image:url(js/shadowbox/resources/play.png);
+background-repeat:no-repeat;
+}
+#sb-nav-pause{
+background-image:url(js/shadowbox/resources/pause.png);
+background-repeat:no-repeat;
+}
+#sb-counter{
+float:left;
+padding:2px 0;
+width:45%;
+}
+#sb-counter a {
+padding:0 2px;
+margin: 0px 4px 0px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+#sb-counter a:hover {
+text-decoration:underline;
+}
+#sb-counter a.sb-counter-current{
+color:#fff;
+text-decoration:underline;
+}
+div.sb-message{
+/*font-size:11px;*/
+padding:10px;
+text-align:center;
+}
+div.sb-message a:link,div.sb-message a:visited{
+text-decoration:none;
+}
+
+#sb-loading a {
+display: none;
+visibility: hidden;
+}
+
+#hoverNav{
+	position: absolute;
+	top: 32%;
+	left: 0%;
+	height: 200px;
+	width: 100%;
+	z-index: 1;
+	}
+#imageContainer>#hoverNav{ left: 0%;}
+#hoverNav a{ outline: none;}
+
+#sb-nav-previous, #sb-nav-next{
+position: fixed;
+top: 50%;
+margin-top: -100px;
+	height: 200px;
+	width: 70px;
+	background: transparent url(images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	z-index: 2000;
+	}
+#sb-nav-previous { left: 20px; float: left; min-width: 38px;}
+#sb-nav-next { right: 20px; float: right; min-width: 38px;}
+#sb-nav-previous, #sb-nav-previous:visited { background: url(images/prevsign.png) 50% 0px no-repeat; }
+#sb-nav-next, #sb-nav-next:visited { background: url(images/nextsign.png) 50% 0px no-repeat; }
+/*
+#sb-nav-previous:hover, #sb-nav-previous:visited:hover { background: url(../images/prevarrow.png) 50% 0px no-repeat; }
+#sb-nav-next:hover, #sb-nav-next:visited:hover { background: url(../images/nextarrow.png) 50% 0px no-repeat; }
+*/
